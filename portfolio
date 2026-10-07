@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Will Poggi | Portfolio</title>
+<meta name="description" content="Will Poggi, Economics and Supply Chain Management student at Rutgers Business School.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f2a33;
+    --paper: #f4f7f5;
+    --sea: #2f6b5a;
+    --foam: #dfe9e4;
+    --buoy: #f2b705;
+    --muted: #4d6169;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Instrument Sans", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--sea); }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--buoy); outline-offset: 3px; }
+
+  header.site {
+    display: flex; justify-content: space-between; align-items: center;
+    max-width: 960px; margin: 0 auto; padding: 20px 24px;
+  }
+  header.site strong { font-family: "Newsreader", serif; font-size: 1.2rem; }
+  nav a { margin-left: 20px; text-decoration: none; color: var(--ink); font-weight: 500; }
+  nav a:hover { text-decoration: underline; text-decoration-color: var(--buoy); text-underline-offset: 6px; text-decoration-thickness: 3px; }
+
+  .hero { background: var(--ink); color: var(--paper); }
+  .hero .inner { max-width: 960px; margin: 0 auto; padding: 88px 24px 96px; }
+  .hero h1 {
+    font-family: "Newsreader", serif; font-weight: 600;
+    font-size: clamp(1.9rem, 4.6vw, 3.2rem); line-height: 1.2;
+    max-width: 20em; margin: 0 0 28px;
+  }
+  .hero .meta { color: #b9cbc4; margin: 0 0 32px; }
+  .btn {
+    display: inline-block; padding: 12px 22px; border-radius: 4px;
+    background: var(--buoy); color: var(--ink); font-weight: 600; text-decoration: none;
+  }
+  .btn:hover { background: #ffd23d; }
+  .btn.ghost { background: transparent; color: var(--paper); border: 1px solid #5d7b82; margin-left: 12px; }
+  .btn.ghost:hover { background: #1b3d48; }
+
+  main { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 72px 0 8px; }
+  h2 { font-family: "Newsreader", serif; font-size: 2rem; margin: 0 0 28px; }
+
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; }
+  .skills h3 { margin: 0 0 12px; font-size: 1rem; border-bottom: 3px solid var(--buoy); display: inline-block; padding-bottom: 4px; }
+  .skills ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .skills li { background: var(--foam); padding: 6px 12px; border-radius: 999px; font-size: 0.95rem; }
+
+  .project { padding: 28px 0; border-top: 1px solid #b9cbc4; display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .project h3 { font-family: "Newsreader", serif; font-size: 1.4rem; margin: 0; }
+  .project p { margin: 0; max-width: 62ch; }
+  .tools { color: var(--muted); font-size: 0.9rem; }
+  .links a { margin-right: 18px; font-weight: 600; }
+
+  footer { margin-top: 80px; background: var(--foam); }
+  footer .inner { max-width: 960px; margin: 0 auto; padding: 36px 24px; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; }
+  footer p { margin: 0; flex: 1 1 260px; }
+
+  @media (max-width: 560px) {
+    nav a { margin-left: 12px; }
+    .btn.ghost { margin: 12px 0 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <strong>Will Poggi</strong>
+  <nav aria-label="Main">
+    <a href="#statement">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- PERSONAL STATEMENT -->
+<div class="hero" id="statement">
+  <div class="inner">
+    <h1>I'm an Economics and Supply Chain Management student at Rutgers Business School who turns research and data into clear, practical recommendations for businesses.</h1>
+    <p class="meta">Rutgers Business School, class of 2028 &nbsp;|&nbsp; Intern, Seaside Sustainability</p>
+    <a class="btn" href="#projects">See my projects</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+</div>
+
+<main>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Technical</h3>
+        <ul>
+          <li>Excel (databases, tables, formulas)</li>
+          <li>Google Sheets</li>
+          <li>Python (Pillow, NumPy)</li>
+          <li>HTML and CSS</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Business and analysis</h3>
+        <ul>
+          <li>Economic analysis</li>
+          <li>Supply chain and value chain mapping</li>
+          <li>Archival and market research</li>
+          <li>Data organization and verification</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Professional</h3>
+        <ul>
+          <li>Written communication</li>
+          <li>Outreach and relationship building</li>
+          <li>Team leadership</li>
+          <li>Public speaking</li>
+          <li>Spanish (bi-literate)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <h3>Boat shrink wrap recycling value chain</h3>
+      <p>Researched how used boat shrink wrap moves from marinas to recyclers across Massachusetts, Connecticut, Rhode Island, New York, and New Jersey. Produced a report that maps the value chain and profiles regional recyclers.</p>
+      <span class="tools">Tools: market research, Word, Excel</span>
+      <span class="links"><a href="https://github.com/YOUR-USERNAME/shrink-wrap-recycling">View on GitHub</a></span>
+    </article>
+
+    <article class="project">
+      <h3>Marine industry outreach database</h3>
+      <p>Built and verified a Northeast contact list for sustainability outreach, then catalogued environmental stewardship programs at about 40 marine businesses in a structured Yes/No table.</p>
+      <span class="tools">Tools: Excel, Google Sheets</span>
+      <span class="links"><a href="https://github.com/YOUR-USERNAME/marine-outreach-database">View on GitHub</a></span>
+    </article>
+
+    <article class="project">
+      <h3>Historical manuscript research database</h3>
+      <p>As a Rutgers research assistant, searched JSTOR, ProQuest, and the Library of Congress to support a historical manuscript. Built a searchable database of more than 200 entries, and presented the work at the 2026 Undergraduate Research Writing Conference.</p>
+      <span class="tools">Tools: archival research, Excel, Google Sheets</span>
+      <span class="links"><a href="https://github.com/YOUR-USERNAME/manuscript-research-database">View on GitHub</a></span>
+    </article>
+  </section>
+</main>
+
+<!-- CONTACT -->
+<footer id="contact">
+  <div class="inner">
+    <p><strong>Let's talk.</strong> I'm looking for business and supply chain internships.</p>
+    <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>
+    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+    <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
